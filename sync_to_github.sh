@@ -42,6 +42,7 @@ echo "[${timestamp}]: Running ${0} on $(hostname) from $(pwd); scriptdir=${scrip
 
 
 
+start=$(date +%s)
 
 which git >/dev/null 2>&1 || PATH=/glade/u/apps/casper/23.10/opt/view/bin:${PATH}
 
@@ -50,6 +51,12 @@ git add */latest 2>&1 | tee -a ${logfile}
 git status */latest 2>&1 | grep "nothing to commit, working tree clean" >/dev/null 2>&1 \
     && { echo "No changes to push, exiting..." | tee -a ${logfile}; exit 0; }
 
-git commit -m "adding MOTD entries from ${0} on $(date)" 2>&1 | tee -a ${logfile}
+git commit -m "[${0}] adding MOTD entries from $(pwd) on $(date)" 2>&1 | tee -a ${logfile}
 
 git push 2>&1 | tee -a ${logfile} || { echo "cannot push to github.com on $(date), skipping update!"; exit 1; }
+
+make -s -C .. fixperms
+
+stop=$(date +%s)
+elapsed=$((${stop} - ${start}))
+echo -n "Done at $(date) / ${elapsed} seconds"
