@@ -59,4 +59,4 @@ make -s -C .. fixperms
 
 stop=$(date +%s)
 elapsed=$((${stop} - ${start}))
-echo -n "Done at $(date) / ${elapsed} seconds"
+echo "Done at $(date) / ${elapsed} second(s)" | tee -a ${logfile} 
