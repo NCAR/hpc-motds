@@ -1,4 +1,4 @@
-.github_update.lock
+.*_update.lock
 */????/
 sync_to_github.log
-sync_to_github.sh~
+*~

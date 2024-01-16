@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -l
 
 #----------------------------------------------------------------------------
 # environment & site config, if any
@@ -8,7 +8,7 @@ SCRIPTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd ${SCRIPTDIR} || { echo "cannot cd ${SCRIPTDIR}!!"; exit 1; }
 
 #--------------------------------------------------------------
-LOCK=$(pwd)/.github_update.lock
+LOCK=$(pwd)/.motd_update.lock
 remove_lock()
 {
     rm -f "${LOCK}"
@@ -24,7 +24,7 @@ another_instance()
 have_lockfile=False
 which lockfile >/dev/null 2>&1 && have_lockfile=True
 if [[ True == ${have_lockfile} ]]; then
-    lockfile -r 5 -l 3600 "${LOCK}" || another_instance
+    lockfile -r 5 -l 120 "${LOCK}" || another_instance
     trap remove_lock EXIT
 fi
 #--------------------------------------------------------------
@@ -45,7 +45,11 @@ echo "[${timestamp}]: Running ${0} on $(hostname) from $(pwd); scriptdir=${scrip
 
 which git >/dev/null 2>&1 || PATH=/glade/u/apps/casper/23.10/opt/view/bin:${PATH}
 
-#echo git add */????/??/motd.*
 git add */latest 2>&1 | tee -a ${logfile}
+
+git status */latest 2>&1 | grep "nothing to commit, working tree clean" >/dev/null 2>&1 \
+    && { echo "No changes to push, exiting..." | tee -a ${logfile}; exit 0; }
+
 git commit -m "adding MOTD entries from ${0} on $(date)" 2>&1 | tee -a ${logfile}
-git push 2>&1 | tee -a ${logfile}
+
+git push 2>&1 | tee -a ${logfile} || { echo "cannot push to github.com on $(date), skipping update!"; exit 1; }
