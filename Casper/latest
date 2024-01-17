@@ -1,15 +1,15 @@
 ******************************************************************************
-*          Welcome to Casper - Tuesday, January 16 2024
+*          Welcome to Casper - Wednesday, January 17 2024
 ******************************************************************************
            	 Today in the Daily Bulletin (arc.ucar.edu)
 
-       - Transitioning to Derecho Training - Recording and Materials Published
-       - New Casper Resources Available
+       - Derecho Downtime February 5–7 for System Maintenance
+       - Submit an abstract by 1/26 to the Improving Scientific Software (ISS)
+         Conference
+       - New cron resource available for HPC Users
 
 Documentation:        https://ncar.pub/CISL-user-documentation
 Key module commands:  module list, module avail, module spider, module help
 Consulting Services:  https://rchelp.ucar.edu
 CISL Help:            cislhelp@ucar.edu -- 303-497-2000
 --------------------------------------------------------------------------------
-
-Test Edit from benkirk, v2.4
