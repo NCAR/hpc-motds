@@ -4,9 +4,10 @@
            	 Today in the Daily Bulletin (arc.ucar.edu)
 
        - Derecho Downtime February 5–7 for System Maintenance
-       - Submit an abstract by 1/26 to the Improving Scientific Software (ISS)
-         Conference
+       - Reminder: Jan. 27 AMS tutorial on visualizing geoscience data with Python!
+       - Two weeks left! Submit an abstract by 1/26 to the Improving Scientific Software Conference
        - New cron resource available for HPC Users
+       - Apply to ATPESC - Argonne Training Program on Extreme-Scale Computing
 
 Documentation:        https://ncar.pub/CISL-user-documentation
 Key module commands:  module list, module avail, module spider, module help
