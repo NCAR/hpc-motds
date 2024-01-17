@@ -35,8 +35,7 @@ timestamp="$(date +%F@%H:%M)"
 cron_logdir="${HOME}/.my_cron_logs/$(date +%Y)/$(date +%m)"
 logfile="${cron_logdir}/sync_motds_to_github.log"
 mkdir -p ${cron_logdir} || exit 1
-scriptdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-echo "[${timestamp}]: Running ${0} on $(hostname) from $(pwd); scriptdir=${scriptdir}" \
+echo "[${timestamp}]: Running ${0} on $(hostname) from $(pwd)" \
     | tee -a ${logfile}
 #--------------------------------------------------------------
 
