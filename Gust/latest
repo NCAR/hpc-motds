@@ -1,15 +1,20 @@
-******************************************************************************
+********************************************************************************
 *          Welcome to Gust - Friday, February 23 2024
-******************************************************************************
+********************************************************************************
            	 Today in the Daily Bulletin (arc.ucar.edu)
- 
+	 
        - Reminder: iCAS submissions due Wednesday 2/28!
-       - REMINDER: GLADE Reconfigurations: p, Collections, and Cheyenne Scratch Retirement Process and Deadlines
-       - GLADE Reconfigurations: p, Collections, and Cheyenne Scratch Retirement Process and Deadlines
+       - REMINDER: GLADE Reconfigurations: p, Collections, and Cheyenne Scratch
+                   Retirement Process and Deadlines
        - Apply to ATPESC - Argonne Training Program on Extreme-Scale Computing
 
 Documentation:        https://ncar-hpc-docs.readthedocs.io
 Key module commands:  module list, module avail, module spider, module help
 Consulting Services:  https://rchelp.ucar.edu
 CISL Help:            cislhelp@ucar.edu -- 303-497-2000
+
+	 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ 	 !!! /glade/scratch/<username> has become read-only !!!
+	 !!!  and will be PERMANENTLY DEACTIVATED 2/29/2024 !!!
+	 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 --------------------------------------------------------------------------------
