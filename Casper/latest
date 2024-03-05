@@ -1,22 +1,14 @@
 ********************************************************************************
-*          Welcome to Casper - Thursday, February 29 2024
+*          Welcome to Casper - Tuesday, March 05 2024
 ********************************************************************************
            	 Today in the Daily Bulletin (arc.ucar.edu)
 
+       - ATPESC Training Program Deadline Extended
+       - SEA Open Discussion on Documentation
        - Register for the 2024 Improving Scientific Software Conference
-       - NSF requests research and education use cases for NAIRR
-       - REMINDER: GLADE Reconfigurations: p, Collections, and Cheyenne Scratch Retirement Process and Deadlines
 
 Documentation:        https://ncar-hpc-docs.readthedocs.io
 Key module commands:  module list, module avail, module spider, module help
 Consulting Services:  https://rchelp.ucar.edu
 CISL Help:            cislhelp@ucar.edu -- 303-497-2000
-
-	 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
- 	 !!! /glade/scratch/<username> has become read-only !!!
-	 !!!  and will be PERMANENTLY DEACTIVATED 2/29/2024 !!!
-	 !!!      any reminaing data will be LOST.          !!!
-	 !!!                                                !!!
-	 !!!      https://arc.ucar.edu/articles/614         !!!
-	 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 --------------------------------------------------------------------------------
