@@ -38,6 +38,6 @@ mkdir -p ${cron_logdir} || exit 1
 export status_string="[${timestamp}]: Running ${0} on $(hostname) from $(pwd)"
 #--------------------------------------------------------------
 
-which git >/dev/null 2>&1 || PATH=/glade/u/apps/casper/23.10/opt/view/bin:${PATH}
+which git >/dev/null 2>&1 || export PATH=/glade/u/apps/casper/23.10/opt/view/bin:${PATH}
 
 make --silent sync_stamp 2>&1 | tee -a ${logfile}
